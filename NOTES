@@ -1,0 +1,41 @@
+
+When compiling the JPEG library, compile like this to get the
+debug info:
+
+	nmake
+
+and compile like this to get the optimized version:
+
+	nmake nodebug=1
+
+Doesn't seem to make much difference in performance, but the
+size is much smaller.
+
+--------------------------------------------------------------------
+
+Quality Check
+    Empty directory
+    Corrupted images
+    Very large images
+    Very small images (should we skip them?)
+    Hidden images and directories
+
+--------------------------------------------------------------------
+
+To do before we can release Jessu 1.1:
+
+- Look through jessu mail folder for other ideas
+
+Done since version 1.0:
+
+- Add a longjmp in the jpeg reading code
+- Skip hidden files and directories
+- Use less memory
+- Faster reading of files
+- The "f" key toggles display of filename
+- The "p" key toggles pause
+- Added flag for less memory, more blurry
+- Added flag for default display of filenames
+- Can see cursor when paused by moving mouse
+- Bias towards top of vertical image
+

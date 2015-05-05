@@ -1,0 +1,234 @@
+[General]
+FileVersion=1.1
+FileType=QSetupIniFile
+ComposerVersion=4.0.0.3
+
+[Project]
+ProjectName=Jessu
+ProjectDirectory=C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\QSetup
+NonSFXDirectory=C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\QSetup\NonSFX
+MediaFileName=Jessu.exe
+CopyMediaToFName=
+ProgramDescriptiveName=Jessu Screen Saver
+ProgramVersion=1.2
+CompanyName=HeadCode
+ProgVerLiveUpdate=1
+RegisterAsApp=1
+LanguageFlag=1
+LanguageNames=|
+UseNonSFXDir=0
+ClrNonSFXDir=0
+CompressNonSFXFiles=0
+ForceCopyNonSFXFiles=0
+
+[Display]
+AddSetupBackground=1
+TopLabel=1
+TopLabelVer=0
+TopLabel2=1
+BottomLabel=1
+TopLabelText="Jessu Screen Saver"
+TopLabel2Text="by HeadCode"
+BottomLabelText="Copyright © 2002-2003 by HeadCode"
+TopBackgroundColor=6610055
+BottomBackgroundColor=39219
+AddBottomColor=1
+DlgBmp3DFrame=1
+DialogStyle=Modern
+AddDialogBitmap=0
+DialogBitmapFileName=C:\Documents and Settings\Lawrence\My Documents\My Pictures\plato.bmp
+AddBackgroundBitmap=0
+BackgroundBitmapFileName=C:\Documents and Settings\Lawrence\My Documents\My Pictures\plato.bmp
+BackgroundBitmapLocation=|Center|0|0|
+AddBackgroundWave=0
+BgBmpTransparent=1
+BackgroundWaveFileName=
+BackgroundWaveLocation=|Center|300|0|
+BackgroundWaveLoop=1
+BackgroundWaveDelay=0
+AddBackgroundWaveSlider=1
+BackgroundWaveSliderType=Fixed
+TopLabelSide=Left
+TopLabel2Side=Left
+BottomLabelSide=Left
+DialogLocation=|Center|0|0|
+TopLabelFont=|Tahoma|36|16777215|0|2|
+TopLabel2Font=|Courier New|18|16777215|0|1|
+BottomLabelFont=|Tahoma|10|16777215|1|0|
+CompanyUrl=www.headcode.com
+
+[TargetExe]
+TargetDirectory=<ProgramFilesDir>HeadCode\Jessu
+CommonDirectory=<CommonFilesDir>HeadCode
+AuxDirectory=<FontDir>
+TargetExeName=<System Directory>\SSJessu.scr
+RunTimeDir_1=|||||||1||||1||1|<ProgramFilesDir>|||||
+RunTimeDir_2=|||||||1||||1||1|<ProgramFilesDir>|||||
+RunTimeDir_3=|||||||1||||1||1|<ProgramFilesDir>|||||
+
+[Dialogs]
+SelectedDialogs=*Welcome,*License,Readme,User Information,Setup Type,Custom,*Destination,Associate,Shortcuts,Confirm Setup,*Copy Files,*Complete
+LicenseTextFile=C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\License.txt
+ReadmeTextFile=
+ReadmeTextFile2=
+UseNotepad=0
+SpaceReqOnDriveCheckBox=0
+SpaceReqOnDrive=
+RequestUserName=1
+RequestCompanyName=1
+RequestSerialNumberAlso=0
+RequestSerialCheckDLL=0
+SerialCheckDll=
+RequestPredefinedSerial=0
+CaseSensitiveSerial=0
+RequestTokenizedSerial=0
+CDSetup=0
+ShowCompactSetupAlso=1
+ForcePartialSetup=0
+ShowProgBar2=0
+SilentSetup=0
+ProposeReadme=0
+ProposeLaunch=0
+ProposeRestart=0
+ProposeReadmeChecked=0
+ProposeLaunchChecked=0
+ShowCloseRecommendation=0
+ShowAdwareDisclaimer=0
+ShowCopyrightWarning=1
+
+[Shortcuts]
+AddMainShortCut=0
+ForceRemoveShortcutFolder=0
+ProgramLinkFolder=Jessu Screen Saver
+ProgramLinkName=Configure Jessu
+ProgramLinkParam=/c
+ProgramLinkWorkDir=
+ProgramLinkRun=Normal Window
+ProgramLinkIconFile=
+ProgramLinkIconNum=0
+StartMenuLinkName=Jessu Screen Saver
+DesktopLinkName=Jessu Screen Saver
+SendToLinkName=Jessu Screen Saver
+StartUpLinkName=Jessu Screen Saver
+QuickLaunchLinkName=Jessu Screen Saver
+StartMenuCheckBox=0
+DesktopCheckBox=0
+SendToCheckBox=0
+StartUpCheckBox=0
+QuickLaunchCheckBox=0
+StartMenuChecked=1
+DesktopChecked=1
+SendToChecked=1
+StartUpChecked=1
+QuickLaunchChecked=1
+SetAllUsers=0
+AddUninstallShortcut=1
+Item-000=|Configure|<System Directory>\SSJessu.scr|Jessu Screen Saver|/c||Normal Window||0|
+Item-001=*|View License|<Application Folder>\License.txt|Jessu Screen Saver|||Normal Window||0|
+
+[Billboard]
+AddBillboard=1
+Item-000=|1|0|0|1|0|Center|0|0|8388608|16711680|Verdana|14|16777215|1|0|360|360|0|1|
+
+[SplitSetup]
+SplitSetup=0
+ForceDownload=1
+DownloadURL_SPLIT=http://
+ConfirmSplitDownload=0
+
+[AutoUpdate]
+AutoUpdate=0
+RunAutoUpdate=0
+AddAutoUpdateShortcut=0
+ReqConfirmDownload=0
+ReqConfirmInstall=0
+ShutDownMethod=Don't Shut Down
+BackgroundUpdate=0
+RestartProcess=0
+InformFinish=0
+UpdateProjectFName=
+DownloadURL_UPDATE=http://
+NameOfUpdateFile=
+RunningProcess=
+VersionOriginal=1
+ValidVersions=
+VersionNew=1
+ReAskDays=0
+AutoUpdateProbeSpin=1
+AutoUpdateProbeText=Only at Agent Start
+
+[Switches]
+OperatingSystems=All,95,98,ME,NT,2000,XP
+OverwriteFlag=1
+CreateUnInstall=1
+ScrambleUnInstallData=1
+UnInstallSExetamp=0
+CreateLogFile=0
+ConfirmExtract=0
+TestAdminRights=1
+TestAdminRightsUnInstall=1
+TestDotNetFramework=0
+TestExeBeforeInstall=1
+TestExeBeforeUnInstall=1
+
+[Registry]
+Reg-000=*|HKEY_CURRENT_USER\Control Panel\Screen Saver.Jessu|InstallDir|<InstallDir>|Create|Remove Key|String|
+Reg-001=*|HKEY_CURRENT_USER\Control Panel\Desktop|SCRNSAVE.EXE|<System Directory>\SSJessu.scr|Create|Remove Value|String|
+
+[IniFile]
+
+[Environment]
+
+[Association]
+OpenWith=0
+OpenWithName=
+OpenWithMenuText=Open with
+OpenWithExtensions=
+
+[VerInfo]
+CopyFromExe=1
+DefineManually=0
+Item-001=|Comments||
+Item-002=|CompanyName|HeadCode|
+Item-003=|FileDescription|Jessu Screen Saver|
+Item-004=|FileVersion|1.1|
+Item-005=|InternalName|Jessu|
+Item-006=|LegalCopyright|Copyright © 2003|
+Item-007=|LegalTrademarks||
+Item-008=|OriginalFilename|ssjessu.scr|
+Item-009=|ProductName|Jessu Screen Saver|
+Item-010=|ProductVersion|1.1|
+CopyIconFromTargetExe=1
+CopyIconFromOtherApp=0
+OtherIconAppFileName=
+Spin1=0
+Spin2=0
+
+[Execute]
+ExecuteDllCheckBox=0
+ExecutionDllFileName=
+Exec-000=*||Check for DirectX 8|Setup Start|10|UnConditional|0|0|File Found||0||0|File Found||0||0|File Found||1|Run Executable and Wait||0|Delete File(s)||0|Delete File(s)||0|Delete File(s)||
+Arg-000-1=<WinSys32Dir>d3d8.dll
+Arg-000-2==
+Arg-000-6==
+Arg-000-10==
+Arg-000-13=<InstallDir><Application Folder>\checkx.exe
+Exec-001=*||Configure Jessu|Setup End|10|UnConditional|0|0|File Found||0||0|File Found||0||0|File Found||1|Shell Execute (Hide)||0|Delete File(s)||0|Delete File(s)||0|Delete File(s)||
+Arg-001-2==
+Arg-001-6==
+Arg-001-10==
+Arg-001-13=<InstallDir>ConfigJessu.bat
+
+[GroupNames]
+Group-000=Main Group
+
+[Group-000]
+TypicalCompactData=8
+Description=This is the main group of files
+Item-000=Fol*<Application Folder>[0]
+Item-001=Fil*C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\checkx.exe
+Item-002=Fil*C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\ConfigJessu.bat
+Item-003=Fil*C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\jessu_limit.jpg
+Item-004=Fil*C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\License.txt
+Item-005=Fol*<System Directory>[0]
+Item-006=Fil*C:\Documents and Settings\Lawrence\My Documents\Visual C++\jessu\SSJessu.scr

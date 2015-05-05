@@ -1,0 +1,120 @@
+
+To do before we can release Jessu 1.2:
+
+- Blank out other monitors
+- Fix drawing bugs.
+- Update release date in About box
+
+To do:
+
+- Cache the contents of the contrib buffer, not just the buffer
+- In paused mode maybe have a border to the left and right (even 5 pixels)
+  to show that that's the edge of the picture.
+- Add command-line flags to set tile size, etc.
+- Be sure it works well in bad situations
+    No or old DirectX library
+    Cards that have small per-texture (done)
+    Cards that have small total-texture size
+    Cards that have few bits per pixel
+    Only bad files in directory (bad JPEGs)
+- Have a different modes where smaller pictures (like 5x7 prints) are
+  flying around randomly
+- Show a movie clip where a picture would be
+- Nicer lack-of-DirectX 8 error message (direct link)
+
+Maybes:
+
+- Select more than one directory to show
+- Play music while showing pictures
+- Have option to have simple slideshow for slow computers
+- Support arrows to go back and forward
+- Have a key to rotate the picture and save it
+- Show filename after previous picture has faded out 80% (or something) so that
+  it doesn't seem to lag the new picture
+
+Bart requests:
+
+- User-configurable fade times and speed
+- GIF, PNG, BMP image support
+- Video support almost exactly like what I suggested jokingly
+    to you a few weeks ago.
+
+For slideshow mode:
+
+- Have Windows Explorer right-click menu item for showing directory
+  with Jessu
+- Load picture list from file, maybe with per-picture times
+- Normally move at certain speed, but can:
+    - Pause (space)
+    - Move back and forth with arrows (left and right)
+    - Resume (space)
+    - Pan up and down (up and down)
+    - Quit (esc)
+- Sync to audio track (?!)
+
+Thoughts about Stand-Alone Mode:
+
+- Have two modes:
+    - Organizing
+    - Presentation (slide show)
+- Organizing mode:
+    - Should show thumbnail with additional data:
+        - Filename
+        - Duration
+        - Specific point in picture to zoom into or zoom out of
+        - Other zooming or panning instructions
+        - Notes to display while showing
+        - Audio to play while showing?
+        - Automatically-generated text for title slides
+    - Use drag-and drop to reorder slides and add slides from Explorer
+    - Have pull-down menu items for:
+        - Add slide
+        - Delete slide
+        - Change info
+    - Support multiple select of slides
+    - Change info dialog box:
+        - Edit all additional data
+        - Button to delete slide
+        - Button to go to next slide, previous slide
+    - Show summary information:
+        - Total slideshow time
+        - Number of slides
+        - Audio to play throughout, looping
+    - Have way to optimize slide show:
+        - Copy all images to single folder
+        - Resize images to optimum for loading/scaling
+    - Show slides top-to-bottom at left with information at right
+    - Always save slideshows as modifications are made with a way to
+        undo all changes.  This may be a problem if the user often
+        wants to make changes on the fly during presentations.  On
+        second thought, maybe it should be the more traditional
+        Open and Save model.
+    - When open without args, load previously worked-on slideshow
+- Presentation mode:
+    - Works as it does now
+    - <SPACE> pauses, resumes (paused mode goes to fit size)
+    - <ESC> goes to organizing mode with current slide selected
+    - <LEFT> and <RIGHT> go through slides right away
+    - <UP> and <DOWN> scroll while paused
+    - <S>, <N>, and <F> changes speed of slide show
+    - <+> skips 10 ahead, <-> goes 10 back (maybe not since can
+        use organizing mode)
+- Reorganization of processes:
+    - Make work process be slave of main (graphics) process.  This means:
+        - The work process loops idly (blocks?) until the main process
+            gives it a specific order:
+            - Load this file into this memory
+            - Scale and tile this image into here (for texture or thumbnail)
+            - Stop and go back to idle mode
+        - Work process has no direct knowledge of what the main process
+            is doing or its data structures
+- Reorganization of data structures:
+    - Data structures should be separated out more cleanly so that there's
+        no duplication between displayed slides and stored information.
+        This probably means wasting more memory in screen saver mode.
+    - Try to get rid of all the boolean "so_and_so_is_ready" variables
+        and replace them with some state that moves along and can be
+        tracked more easily.  Maybe do this with listeners that wait
+        for the previous step to finish, or do it with TARGET-like
+        system.
+

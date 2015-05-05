@@ -1,0 +1,5 @@
+
+all:	make_key
+
+make_key:	make_key.o key.o
+	$(CXX) make_key.o key.o -o make_key

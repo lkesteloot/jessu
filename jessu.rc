@@ -1,0 +1,94 @@
+
+/*
+ * Jessu.rc
+ *
+ * $Id: jessu.rc,v 1.19 2004/04/04 05:23:04 lk Exp $
+ *
+ */
+
+#include "resource.h"
+#include "afxres.h"
+
+#define DS_SHELLFONT (DS_SETFONT | DS_FIXEDSYS)
+
+CONFIG DIALOGEX DISCARDABLE  200, 140, 250, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU |
+        DS_SHELLFONT
+CAPTION "Jessu Screen Saver Options"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT       "Use pictures in this folder:",-1,7,8,130,8
+    EDITTEXT    IDC_FOLDER, 7,21,178,12, WS_TABSTOP | ES_AUTOHSCROLL
+    PUSHBUTTON  "&Browse", IDC_BROWSE, 192,20,50,14, WS_GROUP
+    LTEXT       "Unlock full version with this key:  (get key at www.headcode.com)",-1,7,39,240,8
+    EDITTEXT    IDC_KEY, 7,52,178,12, WS_TABSTOP | ES_AUTOHSCROLL
+    PUSHBUTTON	"Use less memory (pictures are fuzzier)", IDC_LESS_MEMORY, 7,72,200,10, WS_GROUP | BS_AUTOCHECKBOX
+    PUSHBUTTON	"Show filenames by default (press 'F' while running to toggle)", IDC_SHOW_FILENAMES, 7,84,220,10, WS_GROUP | BS_AUTOCHECKBOX
+
+    PUSHBUTTON  "About", IDC_ABOUT, 7,116,50,14, WS_GROUP
+    PUSHBUTTON  "OK", IDC_OK, 138,116,50,14, WS_GROUP | BS_DEFPUSHBUTTON
+    PUSHBUTTON  "Cancel", IDC_CANCEL, 192,116,50,14, WS_GROUP
+END
+
+ABOUT DIALOGEX DISCARDABLE  20, 20, 200, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU | DS_SHELLFONT
+CAPTION "About Jessu Screen Saver"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT       "Jessu Screen Saver, Version 1.2, April 3, 2004",-1,
+                    7,8,190,8
+    LTEXT       "Copyright © 2002-2004",-1,7,18,119,8
+    LTEXT       "Written by Lawrence Kesteloot and Brad Grantham",-1,7,35,190,8
+    LTEXT       "While the screen saver is running, press 'F' to show or hide the filename and 'P' to pause or resume.  While paused, use the up and down arrow keys to scroll the picture vertically.",-1,7,50,186,35
+    LTEXT       "Get the latest version from www.headcode.com",-1,7,91,190,8
+    PUSHBUTTON  "OK", IDC_OK, 142,119,50,14, WS_GROUP | BS_DEFPUSHBUTTON
+END
+
+IDI_JESSU ICON "jessu.ico"
+
+// 24 is RT_MANIFEST -- this file gives Jessu the XP Theme looks
+1 24 DISCARDABLE "jessu.manifest"
+
+// 1 is the magic number for description
+STRINGTABLE DISCARDABLE 
+BEGIN
+    1         "Jessu Slide Show"
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "HeadCode\0"
+            VALUE "FileDescription", "Jessu Screen Saver\0"
+            VALUE "FileVersion", "1.2\0"
+            VALUE "InternalName", "Jessu\0"
+            VALUE "LegalCopyright", "Copyright © 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ssjessu.scr\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Jessu Screen Saver\0"
+            VALUE "ProductVersion", "1.2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

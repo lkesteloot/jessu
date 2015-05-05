@@ -1,0 +1,27 @@
+bug #:		1
+reported:	grantham, 2/14/02
+issue:		some 1-component JPEGs appear to be 
+repeatable:	yes, load the particular image
+details:	jessu.scr dropped me into the debugger reporting a memory
+		 error in free somewhere in jpeg_finish_decompress
+resolution:	
+--------------------------------------------------------------------------
+
+bug #:		2
+reported:	grantham, 2/17/02
+issue:		memory access error in libjpeg
+repeatable:	no, I tried loading the image again and it succeeded
+details:	jessu.scr dropped me into the debugger reporting a memory
+		 error in free somewhere in jpeg_finish_decompress
+resolution:	
+--------------------------------------------------------------------------
+
+bug #:		3
+reported:	grantham, 2/18/02
+issue:		tripping an error in GeForce3 OpenGL
+repeatable:	unknown
+details:	jessu.scr did something to OpenGL on my machine, causing
+		 it to spontaneously reboot.
+resolution:	
+--------------------------------------------------------------------------
+

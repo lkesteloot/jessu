@@ -1,0 +1,171 @@
+Brad's new Penta Performance "Vortex" laptop:
+
+Operating System version: 5.1 build 2600, annotation ""
+Platform ID: 2
+
+Processor 0, level 15, revision 516
+1 processors, active mask 00000001
+
+Default screen is 1600 by 1200 pixels with 32 bits per pixel.
+OpenGL Vendor: ATI Technologies Inc.
+OpenGL Version: 1.3.2500 WinXP Release
+OpenGL Renderer: Radeon 7500 DDR x86/SSE2
+OpenGL Extensions: GL_ARB_multitexture GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_transpose_matrix GL_ARB_vertex_blend GL_ARB_window_pos GL_S3_s3tc GL_ATI_envmap_bumpmap GL_ATI_map_object_buffer GL_ATI_texture_mirror_once GL_ATI_vertex_array_object GL_ATI_vertex_streams GL_ATIX_texture_env_combine3 GL_ATIX_texture_env_route GL_ATIX_vertex_shader_output_point_size GL_EXT_abgr GL_EXT_bgra GL_EXT_clip_volume_hint GL_EXT_compiled_vertex_array GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_specular_color GL_EXT_stencil_wrap GL_EXT_texgen_reflection GL_EXT_texture_env_add GL_EXT_texture3D GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_lod_bias GL_EXT_texture_filter_anisotropic GL_EXT_texture_object GL_EXT_vertex_array GL_KTX_buffer_region GL_NV_texgen_reflection GL_NV_blend_square GL_SGI_texture_edge_clamp GL_SGIS_texture_border_clamp GL_SGIS_texture_lod GL_SGIS_generate_mipmap GL_SGIS_multitexture GL_WIN_swap_hint WGL_EXT_extensions_string WGL_EXT_swap_control 
+
+Maximum RGBA8 texture size per side: 2048
+Maximum 128x128 resident RGBA8 textures: at least 2048
+Maximum 256x256 resident RGBA8 textures: at least 512
+Maximum 512x512 resident RGBA8 textures: at least 128
+Maximum 1024x1024 resident RGBA8 textures: at least 32
+Maximum 2048x2048 resident RGBA8 textures: at least 8
+
+Texture download:
+	GL_RGBA <- 128x128, GL_RGBA, GL_UNSIGNED_BYTE: 61.794636 Mtexels/sec
+	GL_RGBA8 <- 128x128, GL_RGBA, GL_UNSIGNED_BYTE: 62.662900 Mtexels/sec
+	GL_RGBA8 <- 128x128, GL_BGRA, GL_UNSIGNED_BYTE: 68.888080 Mtexels/sec
+	GL_RGBA8 <- 128x128, GL_RGBA, GL_UNSIGNED_INT_8_8_8_8_REV: 3.797391 Mtexels/sec
+	GL_RGBA8 <- 128x128, GL_BGRA, GL_UNSIGNED_INT_8_8_8_8_REV: 4.020097 Mtexels/sec
+	GL_RGB5_A1 <- 128x128, GL_RGBA, GL_UNSIGNED_BYTE: 53.352220 Mtexels/sec
+	GL_RGB5_A1 <- 128x128, GL_BGRA, GL_UNSIGNED_BYTE: 53.834492 Mtexels/sec
+	GL_RGB5_A1 <- 128x128, GL_RGBA, GL_UNSIGNED_SHORT_5_5_5_1: 88.405040 Mtexels/sec
+	GL_RGB5_A1 <- 128x128, GL_BGRA, GL_UNSIGNED_SHORT_5_5_5_1: 88.322232 Mtexels/sec
+
+Fill rate for GL_RGBA8 GL_BLEND without DEPTH_TEST: 287.194245 Mpixel/sec
+    Estimated frame rate in this mode: 67.419022 frames per sec
+Fill rate for GL_RGB5_A1 GL_BLEND without DEPTH_TEST: 287.120567 Mpixel/sec
+    Estimated frame rate in this mode: 67.401726 frames per sec
+
+------------------------------------------------------------------------------
+
+Bart's Voodoo:
+
+GL_RENDERER: "3Dfx/Voodoo3 (tm)/2 TMUs/16 MB SDRAM/KNI/ICD (Nov  2 2000)"
+GL_VERSION: "1.1.0"
+GL_VENDOR: "3Dfx Interactive Inc."
+GL_EXTENSIONS: "GL_ARB_multitexture GL_EXT_abgr GL_EXT_bgra
+GL_EXT_clip_volume_hint GL_EXT_compiled_vertex_array
+GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_stencil_wrap
+GL_EXT_texture_env_add GL_EXT_vertex_array GL_SGIS_texture_edge_clamp
+GL_EXT_paletted_texture GL_EXT_shared_texture_palette GL_SGIS_multitexture
+WGL_EXT_extensions_string WGL_3DFX_gamma_control WGL_EXT_swap_control
+WGL_ARB_extensions_string "
+
+
+Bart's laptop:
+
+GL_RENDERER: "ProSavage/Twister"
+GL_VERSION: "1.1 2.40.61"
+GL_VENDOR: "S3 Graphics, Incorporated"
+GL_EXTENSIONS: "GL_ARB_multitexture GL_ARB_texture_compression
+GL_EXT_texture_compression_s3tc GL_ARB_texture_env_combine
+GL_EXT_texture_env_combine GL_ARB_texture_env_add GL_EXT_abgr GL_EXT_bgra
+GL_EXT_clip_volume_hint GL_EXT_compiled_vertex_array GL_EXT_fog_coord
+GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_paletted_texture
+GL_EXT_separate_specular_color GL_EXT_shared_texture_palette
+GL_EXT_stencil_wrap GL_EXT_texture_env_add GL_EXT_texture_lod_bias
+GL_EXT_vertex_array GL_KTX_buffer_region GL_S3_s3tc GL_SGIS_multitexture
+GL_WIN_swap_hint "
+
+/*
+Brad's Radeon 32M (or is it 16M?) DDR:
+
+Ran smoothly at 1600x1200 with texture size 512 (using tile size 128)
+(probably would have run with texture size 1024 at 1280x1024)
+
+GL_VERSION: 1.3.2454 WinXP Release
+GL_RENDERER: Radeon 7200 DDR x86/SSE
+GL_EXTENSIONS: GL_ARB_multitexture GL_ARB_texture_border_clamp
+GL_ARB_texture_compression GL_ARB_texture_cube_map
+GL_ARB_texture_env_add GL_ARB_texture_env_combine
+GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3
+GL_ARB_transpose_matrix GL_ARB_vertex_blend GL_ARB_window_pos GL_S3_s3tc
+GL_ATI_envmap_bumpmap GL_ATI_texture_mirror_once GL_ATI_vertex_streams
+GL_ATIX_texture_env_combine3 GL_ATIX_texture_env_route
+GL_ATIX_vertex_shader_output_point_size GL_EXT_abgr
+GL_EXT_bgra GL_EXT_clip_volume_hint GL_EXT_compiled_vertex_array
+GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_packed_pixels
+GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_secondary_color
+GL_EXT_separate_specular_color GL_EXT_stencil_wrap
+GL_EXT_texgen_reflection GL_EXT_texture_env_add GL_EXT_texture3D
+GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map
+GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine
+GL_EXT_texture_env_dot3 GL_EXT_texture_lod_bias
+GL_EXT_texture_filter_anisotropic GL_EXT_texture_object
+GL_EXT_vertex_array GL_KTX_buffer_region GL_NV_texgen_reflection
+GL_NV_blend_square GL_SGI_texture_edge_clamp GL_SGIS_texture_border_clamp
+GL_SGIS_texture_lod GL_SGIS_generate_mipmap GL_SGIS_multitexture
+GL_WIN_swap_hint WGL_EXT_extensions_string WGL_EXT_swap_control
+GL_VENDOR: ATI Technologies Inc.
+*/
+
+/*
+Brad's PCI TNT 16M:
+
+Ran smoothly at 1280x1024x16 with texture size 1024 (tried tile size 128)
+Ran slightly jumpy at 1600x1200x16 with texture size 1024 (tried tile size 128)
+
+GL_VERSION: 1.3.0
+GL_RENDERER: RIVA TNT/PCI/SSE
+GL_EXTENSIONS: GL_ARB_imaging GL_ARB_multitexture
+GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_abgr GL_EXT_bgra
+GL_EXT_compiled_vertex_array GL_EXT_draw_range_elements GL_EXT_fog_coord
+GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal
+GL_EXT_secondary_color GL_EXT_separate_specular_color
+GL_EXT_stencil_wrap GL_EXT_texture_edge_clamp GL_EXT_texture_env_add
+GL_EXT_texture_env_combine GL_EXT_texture_lod_bias GL_EXT_texture_object
+GL_EXT_vertex_array GL_EXT_vertex_weighting GL_IBM_texture_mirrored_repeat
+GL_KTX_buffer_region GL_NV_blend_square GL_NV_evaluators
+GL_NV_fog_distance GL_NV_packed_depth_stencil GL_NV_texgen_reflection
+GL_NV_texture_env_combine4 GL_SGIS_multitexture GL_WIN_swap_hint
+WGL_EXT_swap_control
+GL_VENDOR: NVIDIA Corporation
+*/
+
+/*
+Brad's 32M Matrox G450 (dual head)
+
+Ran just short of 30 Hz at 1600x1200 with texture size 1024 (tile size 128)
+
+Apparently Matrox needs some improvement in its OpenGL.  Both ATI and
+NVIDIA are already up to OpenGL 1.3, but here's Matrox with 1.1...
+
+GL_VERSION: 1.1.3 Aug 30 2001
+GL_RENDERER: Matrox G400
+GL_EXTENSIONS: GL_ARB_multitexture GL_ARB_texture_env_add
+GL_Autodesk_facet_normal GL_EXT_abgr GL_EXT_bgra
+GL_EXT_compiled_vertex_array GL_EXT_packed_pixels
+GL_EXT_separate_specular_color GL_EXT_stencil_wrap
+GL_EXT_texture_edge_clamp GL_EXT_texture_env_add GL_EXT_vertex_array
+GL_KTX_buffer_region GL_SGIS_multitexture GL_WIN_swap_hint
+WGL_EXT_swap_control
+GL_VENDOR: Matrox Graphics Inc.
+*/
+
+/*
+Lawrence's Laptop:
+GL_VERSION: 1.2.2333 WinXP Release
+GL_RENDERER: Radeon VE DDR x86/SSE
+GL_EXTENSIONS: GL_ARB_multitexture GL_ARB_texture_border_clamp
+GL_ARB_texture_compression GL_ARB_texture_cube_map
+GL_ARB_texture_env_add GL_ARB_texture_env_combine
+GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3
+GL_ARB_transpose_matrix GL_ARB_vertex_blend GL_S3_s3tc
+GL_ATIX_envmap_bumpmap GL_ATIX_pn_triangles GL_ATIX_texture_env_combine3
+GL_ATIX_texture_env_route GL_ATI_texture_mirror_once GL_ATI_vertex_streams
+GL_ATI_vertex_shader GL_ATIX_vertex_shader_output_point_size GL_EXT_abgr
+GL_EXT_bgra GL_EXT_clip_volume_hint GL_EXT_compiled_vertex_array
+GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_packed_pixels
+GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_secondary_color
+GL_EXT_separate_specular_color GL_EXT_stencil_wrap
+GL_EXT_texgen_reflection GL_EXT_texture3D GL_EXT_texture_compression_s3tc
+GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_add
+GL_EXT_texture_env_combine GL_EXT_texture_env_dot3
+GL_EXT_texture_filter_anisotropic GL_EXT_texture_object
+GL_EXT_vertex_array GL_KTX_buffer_region GL_ARB_window_pos
+GL_NV_texgen_reflection GL_NV_blend_square GL_SGI_texture_edge_clamp
+GL_SGIS_texture_border_clamp GL_SGIS_texture_lod GL_SGIS_multitexture
+GL_WIN_swap_hint WGL_EXT_extensions_string WGL_EXT_swap_control
+GL_VENDOR: ATI Technologies Inc.
+*/
+
+
